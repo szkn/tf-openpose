@@ -59,7 +59,7 @@ if __name__ == '__main__':
         # a = fig.add_subplot(2, 2, 1)
         a.set_title('Result')
         plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
-        plt.imsave(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+        plt.imsave("result.png",cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
 
         bgimg = cv2.cvtColor(image.astype(np.uint8), cv2.COLOR_BGR2RGB)
         bgimg = cv2.resize(bgimg, (e.heatMat.shape[1], e.heatMat.shape[0]), interpolation=cv2.INTER_AREA)
