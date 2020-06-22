@@ -57,7 +57,7 @@ if __name__ == '__main__':
 
         fig = plt.figure()
         # a = fig.add_subplot(2, 2, 1)
-        a.set_title('Result')
+        # a.set_title('Result')
         plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
         plt.imsave("result.png",cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
 
